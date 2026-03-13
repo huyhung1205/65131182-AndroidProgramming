@@ -33,9 +33,13 @@ public class MainActivity extends AppCompatActivity {
             case '*':
                 return a*b;
             case '/':
+                if(b==0) {
+                    throw new Exception("Lỗi chia 0!");
+                }
                 return a/b;
+            default:
+                throw new Exception("Lỗi!");
         }
-        return 0.00001;
     }
     // Hàm lấy đối tượng, gán giá trị và tính toán
     public void validate(View view, char c){
@@ -46,19 +50,22 @@ public class MainActivity extends AppCompatActivity {
         // Lấy giá trị
         String a = getA.getText().toString();
         String b = getB.getText().toString();
-        double kq;
+        double kq,da,db = 0;
         try {
             // Chuyển giá trị sang số
-            double da = Double.parseDouble(a);
-            double db = Double.parseDouble(b);
-            kq = calculate(da, db, c);
-            // Hiển thị kết quả
-            getKQ.setText(String.valueOf(kq));
-        } catch (Exception e){
-            if(c != '/')
-                getKQ.setText("Nhập số!");
-            else
-                getKQ.setText("Lỗi nhập b!");
+            da = Double.parseDouble(a);
+            db = Double.parseDouble(b);
+            try {
+                kq = calculate(da, db, c);
+                // Hiển thị kết quả
+                getKQ.setText(String.valueOf(kq));
+            }catch (Exception e){
+                getKQ.setText(e.getMessage());
+                return;
+            }
+
+        } catch (Exception e) {
+            getKQ.setText("Nhập số!");
         }
     }
     public void clear(View view){
@@ -80,6 +87,5 @@ public class MainActivity extends AppCompatActivity {
     }
     public void chia(View view){
         validate(view, '/');
-
     }
 }
