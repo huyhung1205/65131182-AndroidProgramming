@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Label: Nhập số a -->
+    <TextView
+        android:id="@+id/label_a"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="56dp"
+        android:text="Nhập số a:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- EditText: Nhập số a -->
+    <EditText
+        android:id="@+id/input_a"
+        android:layout_width="193dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Nhập số a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label_a"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Label: Nhập số b -->
+    <TextView
+        android:id="@+id/label_b"
+        android:layout_width="102dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="31dp"
+        android:text="Nhập số b:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_a" />
+
+    <!-- EditText: Nhập số b -->
+    <EditText
+        android:id="@+id/input_b"
+        android:layout_width="196dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Nhập số b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label_b"
+        app:layout_constraintTop_toBottomOf="@+id/input_a" />
+
+    <!-- Button: Tính tổng -->
+    <Button
+        android:id="@+id/btn_sum"
+        android:layout_width="236dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="62dp"
+        android:onClick="calculateSum"
+        android:text="Tính tổng"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_b" />
+
+    <!-- Label: Kết quả -->
+    <TextView
+        android:id="@+id/label_result"
+        android:layout_width="101dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Kết quả:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sum" />
+
+    <!-- EditText: Kết quả -->
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="193dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Kết quả"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label_result"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
