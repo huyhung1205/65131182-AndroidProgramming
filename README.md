@@ -15,23 +15,31 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 ## 📱 Tổng Quan Các Dự Án
 
 ### 8. **BaiTH5_EventHandling_Calculator_AnonymousListener**
+[Chi tiết](./BaiTH5_EventHandling_Calculator_AnonymousListener/app/src/main/res/layout/activity_main.xml)
+![BaiTH5_EventHandling_Calculator_AnonymousListener](imageProject/BaiTH5_EventHandling_Calculator_AnonymousListener/image.png)
 - **Mục Đích:** Minh họa mẫu trình nghe ẩn danh để xử lý sự kiện
 - **Khái Niệm Chính:** setOnClickListener(), lớp nội tại, các sự kiện nhấp nút
 - **Tính Năng:** Máy tính hoàn chỉnh (cộng, trừ, nhân, chia, đặt lại)
 - **Trọng Tâm Học Tập:** Xử lý sự kiện lập trình với các trình nghe ẩn danh
 
 ### 7. **BaiTH6_EventHandling_Sum_OnClick**
+[Chi tiết](./BaiTH6_EventHandling_Sum_OnClick/app/src/main/res/layout/activity_main.xml)
+![BaiTH6_EventHandling_Sum_OnClick](imageProject/BaiTH6_EventHandling_Sum_OnClick/image.png)
 - **Mục Đích:** Minh họa phương pháp xử lý sự kiện android:onClick
 - **Tính Năng:** Máy tính tổng đơn giản sử dụng ràng buộc thuộc tính phương thức
 - **Trọng Tâm Học Tập:** Xử lý sự kiện khai báo trong bố cục XML
 
 ### 6. **CalculatorsWithLinearLayout**
+[Chi tiết](./CalculatorsWithLinearLayout/app/src/main/res/layout/activity_main.xml)
+![CalculatorsWithLinearLayout](imageProject/CalculatorsWithLinearLayout/image.png)
 - **Mục Đích:** Máy tính đầy đủ tính năng với giao diện dựa trên LinearLayout
 - **Khái Niệm Chính:** Lớp nội tại ẩn danh, các đối tượng OnClickListener, bố cục phức tạp
 - **Tính Năng:** Các phép toán hoàn chỉnh (+, −, ×, ÷), chức năng đặt lại, xử lý lỗi
 - **Trọng Tâm Học Tập:** Mẫu trình nghe ẩn danh và thiết kế bố cục
 
 ### 5. **BMICalculator**
+[Chi tiết](./BMICalculator/app/src/main/res/layout/activity_main.xml)
+![BMICalculator](imageProject/BMICalculator/image.png)
 - **Mục Đích:** Máy tính Chỉ số Khối Lượng Cơ Thể (BMI) với phân loại sức khỏe
 - **Khái Niệm Chính:** Tính toán toán học, xác thực đầu vào, phân loại kết quả
 - **Tính Năng:**
@@ -41,6 +49,8 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 - **Trọng Tâm Học Tập:** Xác thực dữ liệu và logic điều kiện
 
 ### 4. **CalculateSum**
+[Chi tiết](./CalculateSum/app/src/main/res/layout/activity_main.xml)
+![CalculateSum](imageProject/CalculateSum/image.png)
 - **Mục Đích:** Máy tính cộng hai số đơn giản
 - **Khái Niệm Chính:** Thuộc tính android:onClick, xử lý sự kiện dựa trên phương thức
 - **Tính Năng:** Xác thực đầu vào, xử lý ngoại lệ cho các giá trị không phải số
