@@ -14,6 +14,18 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
+### 9. **BaiTH7_ListView**
+[Chi tiết](./BaiTH7_ListView/app/src/main/res/layout/activity_main.xml)
+![BaiTH7_ListView](imageProject/BaiTH7_ListView/image.png)
+- **Mục Đích:** Minh họa cách sử dụng ListView để hiển thị danh sách các phần tử
+- **Khái Niệm Chính:** ListView, ArrayAdapter, OnItemClickListener, custom item layout
+- **Tính Năng:** 
+  - Hiển thị danh sách các vật liệu xây dựng
+  - Xử lý sự kiện click trên từng phần tử listview
+  - Hiển thị Toast thông báo phần tử được chọn
+  - Thiết kế header với avatar và tiêu đề tùy chỉnh
+- **Trọng Tâm Học Tập:** Sử dụng ListView và Adapter để hiển thị dữ liệu động
+
 ### 8. **BaiTH5_EventHandling_Calculator_AnonymousListener**
 [Chi tiết](./BaiTH5_EventHandling_Calculator_AnonymousListener/app/src/main/res/layout/activity_main.xml)
 ![BaiTH5_EventHandling_Calculator_AnonymousListener](imageProject/BaiTH5_EventHandling_Calculator_AnonymousListener/image.png)
