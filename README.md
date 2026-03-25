@@ -62,8 +62,8 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 - **Trọng Tâm Học Tập:** Thiết kế giao diện cơ bản và quản lý bố cục
 
 ### 1. **HelloWorld**
-[Chi tiết](./HelloWorld\app\src\main\res\layout\activity_main.xml)
-![HelloWorld](imageProject\HelloWorld\image.png)
+[Chi tiết](./HelloWorld/app/src/main/res/layout/activity_main.xml)
+![HelloWorld](imageProject/HelloWorld/image.png)
 - **Mục Đích:** Dự án giới thiệu minh họa thiết lập hoạt động Android cơ bản
 - **Khái Niệm Chính:** Cấu trúc hoạt động cơ bản, hiển thị từ cạnh tới cạnh, xử lý lề hệ thống
 - **Trọng Tâm Học Tập:** Cấu trúc và cấu hình dự án Android
