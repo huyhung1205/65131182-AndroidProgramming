@@ -14,6 +14,19 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
+### 10. **DocBaoTongHop**
+[Chi tiết](./DocBaoTongHop/app/src/main/res/layout/activity_tieu_de_bao.xml)
+![DocBaoTongHop](imageProject/DocBaoTongHop/image.png)
+- **Mục Đích:** Ứng dụng đọc tin RSS từ VNExpress, minh họa cách sử dụng RecyclerView và fetch dữ liệu từ mạng
+- **Khái Niệm Chính:** RecyclerView, Adapter, RSS API, Xử lý luồng mạng, JSON Parsing
+- **Tính Năng:**
+  - Hiển thị danh sách tin tức từ RSS feed
+  - Fetch dữ liệu tin tức từ VNExpress qua API
+  - Sử dụng RecyclerView cho hiển thị danh sách tối ưu
+  - Header tùy chỉnh với tiêu đề và mô tả
+  - Xử lý lỗi mạng và load dữ liệu không đồng bộ
+- **Trọng Tâm Học Tập:** RecyclerView, Networking, RSS feed parsing, Adapter pattern
+
 ### 9. **BaiTH7_ListView**
 [Chi tiết](./BaiTH7_ListView/app/src/main/res/layout/activity_main.xml)
 ![BaiTH7_ListView](imageProject/BaiTH7_ListView/image.png)
