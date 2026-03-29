@@ -14,6 +14,18 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
+### 12. **BaiTH8_TuyChinhLV**
+[Chi tiết](./BaiTH8_TuyChinhLV/app/src/main/java/hyhung/baith8_tuychinhlv/MainActivity.java)
+![BaiTH8_TuyChinhLV](imageProject/BaiTH8_TuyChinhLV/image.png)
+- **Mục Đích:** Minh họa Custom Adapter và ListView để hiển thị danh sách các món ăn Việt Nam
+- **Khái Niệm Chính:** Custom Adapter, ListView, custom item layout, ArrayList
+- **Tính Năng:**
+  - Hiển thị danh sách 9 món ăn nổi tiếng Việt Nam
+  - Mỗi phần tử hiển thị hình ảnh, tên, giá, mô tả
+  - Xử lý sự kiện click trên từng món ăn
+  - Custom item layout với ImageView và TextView
+- **Trọng Tâm Học Tập:** Custom Adapter, custom item layout, xử lý dữ liệu phức tạp trong ListView
+
 ### 11. **DocBaoTongHop**
 [Chi tiết](./DocBaoTongHop/app/src/main/res/layout/activity_tieu_de_bao.xml)
 ![DocBaoTongHop](imageProject/DocBaoTongHop/image.png)
@@ -26,7 +38,7 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
   - Header tùy chỉnh với tiêu đề và mô tả
   - Xử lý lỗi mạng và load dữ liệu không đồng bộ
 - **Trọng Tâm Học Tập:** RecyclerView, Networking, RSS feed parsing, Adapter pattern
-Tổng Quan Các Dự Án
+
 ### 10. **BaiTH7_ListView_DanhSachTinhThanh**
 [Chi tiết](./BaiTH7_ListView_DanhSachTinhThanh/app/src/main/java/hyhung/baith7_listview_danhsachtinhthanh/MainActivity.java)
 ![BaiTH7_ListView_DanhSachTinhThanh](imageProject/BaiTH7_ListView_DanhSachTinhThanh/image.png)
@@ -51,7 +63,7 @@ Tổng Quan Các Dự Án
   - Thiết kế header với avatar và tiêu đề tùy chỉnh
 - **Trọng Tâm Học Tập:** Sử dụng ListView và Adapter để hiển thị dữ liệu động
 
-### 8. **BaiTH5_EventHandling_Calculator_AnonymousListener**
+### 7. **BaiTH5_EventHandling_Calculator_AnonymousListener**
 [Chi tiết](./BaiTH5_EventHandling_Calculator_AnonymousListener/app/src/main/res/layout/activity_main.xml)
 ![BaiTH5_EventHandling_Calculator_AnonymousListener](imageProject/BaiTH5_EventHandling_Calculator_AnonymousListener/image.png)
 - **Mục Đích:** Minh họa mẫu trình nghe ẩn danh để xử lý sự kiện
@@ -59,14 +71,14 @@ Tổng Quan Các Dự Án
 - **Tính Năng:** Máy tính hoàn chỉnh (cộng, trừ, nhân, chia, đặt lại)
 - **Trọng Tâm Học Tập:** Xử lý sự kiện lập trình với các trình nghe ẩn danh
 
-### 7. **BaiTH6_EventHandling_Sum_OnClick**
+### 6. **BaiTH6_EventHandling_Sum_OnClick**
 [Chi tiết](./BaiTH6_EventHandling_Sum_OnClick/app/src/main/res/layout/activity_main.xml)
 ![BaiTH6_EventHandling_Sum_OnClick](imageProject/BaiTH6_EventHandling_Sum_OnClick/image.png)
 - **Mục Đích:** Minh họa phương pháp xử lý sự kiện android:onClick
 - **Tính Năng:** Máy tính tổng đơn giản sử dụng ràng buộc thuộc tính phương thức
 - **Trọng Tâm Học Tập:** Xử lý sự kiện khai báo trong bố cục XML
 
-### 6. **CalculatorsWithLinearLayout**
+### 5. **CalculatorsWithLinearLayout**
 [Chi tiết](./CalculatorsWithLinearLayout/app/src/main/res/layout/activity_main.xml)
 ![CalculatorsWithLinearLayout](imageProject/CalculatorsWithLinearLayout/image.png)
 - **Mục Đích:** Máy tính đầy đủ tính năng với giao diện dựa trên LinearLayout
@@ -74,7 +86,7 @@ Tổng Quan Các Dự Án
 - **Tính Năng:** Các phép toán hoàn chỉnh (+, −, ×, ÷), chức năng đặt lại, xử lý lỗi
 - **Trọng Tâm Học Tập:** Mẫu trình nghe ẩn danh và thiết kế bố cục
 
-### 5. **BMICalculator**
+### 4. **BMICalculator**
 [Chi tiết](./BMICalculator/app/src/main/res/layout/activity_main.xml)
 ![BMICalculator](imageProject/BMICalculator/image.png)
 - **Mục Đích:** Máy tính Chỉ số Khối Lượng Cơ Thể (BMI) với phân loại sức khỏe
@@ -85,7 +97,7 @@ Tổng Quan Các Dự Án
   - Phân loại sức khỏe theo tiêu chuẩn WHO
 - **Trọng Tâm Học Tập:** Xác thực dữ liệu và logic điều kiện
 
-### 4. **CalculateSum**
+### 3. **CalculateSum**
 [Chi tiết](./CalculateSum/app/src/main/res/layout/activity_main.xml)
 ![CalculateSum](imageProject/CalculateSum/image.png)
 - **Mục Đích:** Máy tính cộng hai số đơn giản
@@ -93,7 +105,7 @@ Tổng Quan Các Dự Án
 - **Tính Năng:** Xác thực đầu vào, xử lý ngoại lệ cho các giá trị không phải số
 - **Trọng Tâm Học Tập:** Sử dụng android:onClick để xử lý sự kiện
 
-### 3. **Calculate**
+### 2. **Calculate**
 [Chi tiết](./Calculate/app/src/main/res/layout/activity_main.xml)
 ![Calculate](imageProject/Calculate/image.png)
 - **Mục Đích:** Ứng dụng máy tính cơ bản với bốn phép toán
@@ -101,7 +113,7 @@ Tổng Quan Các Dự Án
 - **Tính Năng:** Cộng, trừ, nhân, chia, xác thực chia cho không
 - **Trọng Tâm Học Tập:** Xử lý sự kiện với tham chiếu phương thức
 
-### 2. **LinearLayout**
+### 1. **LinearLayout**
 [Chi tiết](./LinearLayout/app/src/main/res/layout/activity_main.xml)
 ![LinearLayout](imageProject/LinearLayout/image.png)
 - **Mục Đích:** Nền tảng bố cục giao diện sử dụng LinearLayout
