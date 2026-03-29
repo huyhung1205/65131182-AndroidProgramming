@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BaiTH8_TuyChinhLV</string>
+    <string name="app_food">App Food</string>
+    <string name="todo">TODO</string>
+    <string name="todoo">TODO</string>
+    <string name="t_n_m_n_n">Tên món ăn</string>
+    <string name="_25_000">25,000 đ</string>
+    <string name="m_t">Mô tả</string>
+</resources>

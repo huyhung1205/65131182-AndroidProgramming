@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#F7FFA6"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/itemAnh"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todoo"
+        android:src="@drawable/img"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/itemTenMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/t_n_m_n_n"
+            android:textSize="20sp"
+            android:textColor="#23504A"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/itemGiaBan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/_25_000"
+            android:textSize="20sp"
+            android:textColor="#E91E63"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/itemMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/m_t"
+            android:textSize="15sp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+</LinearLayout>
