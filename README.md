@@ -14,7 +14,7 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
-### 10. **DocBaoTongHop**
+### 11. **DocBaoTongHop**
 [Chi tiết](./DocBaoTongHop/app/src/main/res/layout/activity_tieu_de_bao.xml)
 ![DocBaoTongHop](imageProject/DocBaoTongHop/image.png)
 - **Mục Đích:** Ứng dụng đọc tin RSS từ VNExpress, minh họa cách sử dụng RecyclerView và fetch dữ liệu từ mạng
@@ -26,6 +26,18 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
   - Header tùy chỉnh với tiêu đề và mô tả
   - Xử lý lỗi mạng và load dữ liệu không đồng bộ
 - **Trọng Tâm Học Tập:** RecyclerView, Networking, RSS feed parsing, Adapter pattern
+Tổng Quan Các Dự Án
+### 10. **BaiTH7_ListView_DanhSachTinhThanh**
+[Chi tiết](./BaiTH7_ListView_DanhSachTinhThanh/app/src/main/java/hyhung/baith7_listview_danhsachtinhthanh/MainActivity.java)
+![BaiTH7_ListView_DanhSachTinhThanh](imageProject/BaiTH7_ListView_DanhSachTinhThanh/image.png)
+- **Mục Đích:** Minh họa cách sử dụng ListView để hiển thị danh sách các tỉnh thành của Việt Nam
+- **Khái Niệm Chính:** ListView, ArrayAdapter, OnItemClickListener, Toast thông báo
+- **Tính Năng:** 
+  - Hiển thị danh sách đầy đủ 63 tỉnh thành của Việt Nam
+  - Xử lý sự kiện click trên từng tỉnh thành
+  - Hiển thị Toast thông báo tỉnh thành được chọn
+  - Giao diện đơn giản và trực quan
+- **Trọng Tâm Học Tập:** Sử dụng ListView với ArrayList và xử lý sự kiện OnItemClickListener
 
 ### 9. **BaiTH7_ListView**
 [Chi tiết](./BaiTH7_ListView/app/src/main/res/layout/activity_main.xml)
