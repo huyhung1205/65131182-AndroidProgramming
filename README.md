@@ -14,6 +14,18 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
+### 13. **BaiTH9_Recyclerview_DanhSachCanhDep**
+[Chi tiết](./BaiTH9_Recyclerview_DanhSachCanhDep/app/src/main/java/hyhung/baith9_recyclerview_danhsachcanhdep/MainActivity.java)
+![BaiTH9_Recyclerview_DanhSachCanhDep](imageProject/BaiTH9_Recyclerview_DanhSachCanhDep/image.png)
+- **Mục Đích:** Minh họa cách sử dụng RecyclerView để hiển thị danh sách cảnh đẹp Việt Nam
+- **Khái Niệm Chính:** RecyclerView, Adapter, ViewHolder, LinearLayoutManager, custom item layout
+- **Tính Năng:**
+  - Hiển thị danh sách nhiều địa điểm/cảnh đẹp bằng RecyclerView
+  - Mỗi item có hình ảnh, tiêu đề và mô tả ngắn
+  - Xử lý sự kiện click từng phần tử bằng Toast
+  - Tách giao diện theo layout riêng cho item dọc và ngang
+- **Trọng Tâm Học Tập:** Làm việc với RecyclerView, adapter tùy biến và tổ chức dữ liệu danh sách hiệu quả
+
 ### 12. **BaiTH8_TuyChinhLV**
 [Chi tiết](./BaiTH8_TuyChinhLV/app/src/main/java/hyhung/baith8_tuychinhlv/MainActivity.java)
 ![BaiTH8_TuyChinhLV](imageProject/BaiTH8_TuyChinhLV/image.png)
@@ -127,7 +139,6 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 - **Khái Niệm Chính:** Cấu trúc hoạt động cơ bản, hiển thị từ cạnh tới cạnh, xử lý lề hệ thống
 - **Trọng Tâm Học Tập:** Cấu trúc và cấu hình dự án Android
 
----
 
 ## 🛠️ Yêu Cầu 
 
