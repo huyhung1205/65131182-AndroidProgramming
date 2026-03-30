@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BaiTH9_Recyclerview_DanhSachCanhDep</string>
+    <string name="danh_s_ch_c_nh_p">Danh Sách Cảnh Đẹp</string>
+    <string name="todo">TODO</string>
+</resources>
