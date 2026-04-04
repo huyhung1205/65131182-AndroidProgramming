@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TH_Intent</string>
+    <string name="activity_main">Activity Main</string>
+    <string name="ng_nh_p">Đăng nhập</string>
+    <string name="activity_login">Activity Login</string>
+    <string name="name">UserName</string>
+    <string name="pass">PassWord</string>
+    <string name="mail">UserEmail</string>
+    <string name="x_c_nh_n">Xác nhận</string>
+    <string name="activity_home">Activity Home</string>
+    <string name="ng_xu_t">Đăng xuất</string>
+    <string name="phan_huy_hung">Phan Huy Hung</string>
+    <string name="ch_o_m_ng">Chào mừng:</string>
+</resources>

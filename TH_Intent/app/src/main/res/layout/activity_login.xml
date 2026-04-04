@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_login"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:background="#0000AD"        android:textStyle="bold"
+
+        android:padding="10dp"
+        android:textColor="@android:color/background_light"/>
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="@string/name"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="15sp"
+            android:layout_weight="3"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="@string/pass"/>
+        <EditText
+            android:id="@+id/pass"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="15sp"
+            android:layout_weight="3"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="@string/mail"/>
+        <EditText
+            android:id="@+id/mail"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="15sp"
+            android:layout_weight="3"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="120dp"
+        android:onClick="btnXacNhan"
+        android:text="@string/x_c_nh_n"
+        android:textSize="20sp"
+        tools:ignore="OnClick" />
+
+
+</LinearLayout>
