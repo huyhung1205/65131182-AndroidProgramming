@@ -14,6 +14,19 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
+### 14. **TH_Intent**
+[Chi tiết](./TH_Intent/app/src/main/java/hyhung/th_intent/MainActivity.java)
+![TH_Intent - Main](imageProject/TH_Intent/main.png)
+![TH_Intent - Login](imageProject/TH_Intent/login.png)
+![TH_Intent - Home](imageProject/TH_Intent/home.png)
+- **Mục Đích:** Minh họa cách sử dụng Intent để chuyển màn hình và trao đổi dữ liệu giữa các Activity
+- **Khái Niệm Chính:** Intent, Explicit Intent, Implicit Intent, startActivityForResult, putExtra
+- **Tính Năng:**
+  - Mở màn hình đăng nhập và màn hình trang chủ bằng Intent tường minh
+  - Chuyển dữ liệu giữa các màn hình bằng Intent extras
+  - Minh họa xử lý luồng điều hướng trong ứng dụng Android
+- **Trọng Tâm Học Tập:** Nắm cách tạo và sử dụng Intent trong ứng dụng thực tế
+
 ### 13. **BaiTH9_Recyclerview_DanhSachCanhDep**
 [Chi tiết](./BaiTH9_Recyclerview_DanhSachCanhDep/app/src/main/java/hyhung/baith9_recyclerview_danhsachcanhdep/MainActivity.java)
 ![BaiTH9_Recyclerview_DanhSachCanhDep](imageProject/BaiTH9_Recyclerview_DanhSachCanhDep/image.png)
