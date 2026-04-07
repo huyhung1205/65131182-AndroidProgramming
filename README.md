@@ -14,6 +14,17 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
+### 15. **Intent_ViDu1**
+[Chi tiết](./Intent_ViDu1/app/src/main/java/hyhung/intentvidu1/MainActivity.java)
+![Intent_ViDu1](imageProject/Intent_ViDu1/image.png)
+- **Mục Đích:** Minh họa cách dùng explicit intent để chuyển qua lại giữa hai Activity
+- **Khái Niệm Chính:** Intent, Explicit Intent, startActivity(), android:onClick, điều hướng màn hình
+- **Tính Năng:**
+  - Mở SubActivity từ MainActivity bằng Intent tường minh
+  - Quay lại MainActivity từ SubActivity bằng nút bấm riêng
+  - Minh họa luồng chuyển màn hình hai chiều trong ứng dụng Android
+- **Trọng Tâm Học Tập:** Nắm cách tạo và sử dụng Intent tường minh để điều hướng giữa các Activity
+
 ### 14. **TH_Intent**
 [Chi tiết](./TH_Intent/app/src/main/java/hyhung/th_intent/MainActivity.java)
 ![TH_Intent - Main](imageProject/TH_Intent/main.png)
@@ -88,7 +99,7 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
   - Thiết kế header với avatar và tiêu đề tùy chỉnh
 - **Trọng Tâm Học Tập:** Sử dụng ListView và Adapter để hiển thị dữ liệu động
 
-### 7. **BaiTH5_EventHandling_Calculator_AnonymousListener**
+### 8. **BaiTH5_EventHandling_Calculator_AnonymousListener**
 [Chi tiết](./BaiTH5_EventHandling_Calculator_AnonymousListener/app/src/main/res/layout/activity_main.xml)
 ![BaiTH5_EventHandling_Calculator_AnonymousListener](imageProject/BaiTH5_EventHandling_Calculator_AnonymousListener/image.png)
 - **Mục Đích:** Minh họa mẫu trình nghe ẩn danh để xử lý sự kiện
@@ -96,14 +107,14 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 - **Tính Năng:** Máy tính hoàn chỉnh (cộng, trừ, nhân, chia, đặt lại)
 - **Trọng Tâm Học Tập:** Xử lý sự kiện lập trình với các trình nghe ẩn danh
 
-### 6. **BaiTH6_EventHandling_Sum_OnClick**
+### 7. **BaiTH6_EventHandling_Sum_OnClick**
 [Chi tiết](./BaiTH6_EventHandling_Sum_OnClick/app/src/main/res/layout/activity_main.xml)
 ![BaiTH6_EventHandling_Sum_OnClick](imageProject/BaiTH6_EventHandling_Sum_OnClick/image.png)
 - **Mục Đích:** Minh họa phương pháp xử lý sự kiện android:onClick
 - **Tính Năng:** Máy tính tổng đơn giản sử dụng ràng buộc thuộc tính phương thức
 - **Trọng Tâm Học Tập:** Xử lý sự kiện khai báo trong bố cục XML
 
-### 5. **CalculatorsWithLinearLayout**
+### 6. **CalculatorsWithLinearLayout**
 [Chi tiết](./CalculatorsWithLinearLayout/app/src/main/res/layout/activity_main.xml)
 ![CalculatorsWithLinearLayout](imageProject/CalculatorsWithLinearLayout/image.png)
 - **Mục Đích:** Máy tính đầy đủ tính năng với giao diện dựa trên LinearLayout
@@ -111,7 +122,7 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 - **Tính Năng:** Các phép toán hoàn chỉnh (+, −, ×, ÷), chức năng đặt lại, xử lý lỗi
 - **Trọng Tâm Học Tập:** Mẫu trình nghe ẩn danh và thiết kế bố cục
 
-### 4. **BMICalculator**
+### 5. **BMICalculator**
 [Chi tiết](./BMICalculator/app/src/main/res/layout/activity_main.xml)
 ![BMICalculator](imageProject/BMICalculator/image.png)
 - **Mục Đích:** Máy tính Chỉ số Khối Lượng Cơ Thể (BMI) với phân loại sức khỏe
@@ -122,7 +133,7 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
   - Phân loại sức khỏe theo tiêu chuẩn WHO
 - **Trọng Tâm Học Tập:** Xác thực dữ liệu và logic điều kiện
 
-### 3. **CalculateSum**
+### 4. **CalculateSum**
 [Chi tiết](./CalculateSum/app/src/main/res/layout/activity_main.xml)
 ![CalculateSum](imageProject/CalculateSum/image.png)
 - **Mục Đích:** Máy tính cộng hai số đơn giản
@@ -130,7 +141,7 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 - **Tính Năng:** Xác thực đầu vào, xử lý ngoại lệ cho các giá trị không phải số
 - **Trọng Tâm Học Tập:** Sử dụng android:onClick để xử lý sự kiện
 
-### 2. **Calculate**
+### 3. **Calculate**
 [Chi tiết](./Calculate/app/src/main/res/layout/activity_main.xml)
 ![Calculate](imageProject/Calculate/image.png)
 - **Mục Đích:** Ứng dụng máy tính cơ bản với bốn phép toán
@@ -138,7 +149,7 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 - **Tính Năng:** Cộng, trừ, nhân, chia, xác thực chia cho không
 - **Trọng Tâm Học Tập:** Xử lý sự kiện với tham chiếu phương thức
 
-### 1. **LinearLayout**
+### 2. **LinearLayout**
 [Chi tiết](./LinearLayout/app/src/main/res/layout/activity_main.xml)
 ![LinearLayout](imageProject/LinearLayout/image.png)
 - **Mục Đích:** Nền tảng bố cục giao diện sử dụng LinearLayout
@@ -172,5 +183,5 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ---
 
-**Cập Nhật Lần Cuối:** Tháng 3 năm 2026  
+**Cập Nhật Lần Cuối:** Tháng 4 năm 2026  
 **Chủ Sở Hữu Kho Lưu Trữ:** Phan Huy Hùng - 65131182
