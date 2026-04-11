@@ -14,6 +14,19 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
+### 17. **BaiTH12FragmentDong**
+
+[Chi tiết](./BaiTH12FragmentDong/app/src/main/java/hyhung/baith12fragmentdong/MainActivity.java)
+![BaiTH12FragmentDong](imageProject/BaiTH12FragmentDong/image.png)
+
+- **Mục Đích:** Minh họa cách thêm Fragment động (dynamic) vào Activity bằng `FragmentManager` để quản lý UI theo từng vùng (Content/Footer)
+- **Khái Niệm Chính:** Fragment, FragmentManager, FragmentTransaction, `add()`, FrameLayout container, `onCreateView()`
+- **Tính Năng:**
+  - Tạo 2 vùng chứa bằng `FrameLayout`: `frmContent` và `frmFooter`
+  - Add `ContentFragment` và `FooterFragment` vào container bằng code trong `MainActivity`
+  - Tách UI thành 2 fragment độc lập, dễ tái sử dụng và mở rộng
+- **Trọng Tâm Học Tập:** Nắm luồng thao tác thêm Fragment động và cách tổ chức layout “container → fragment” trong ứng dụng Android
+
 ### 16. **BaiTH11FragmentTinh**
 
 [Chi tiết](./BaiTH11FragmentTinh/app/src/main/java/hyhung/baith11fragmenttinh/MainActivity.java)
