@@ -221,19 +221,76 @@ Trong đó:
 
 1) Tạo project mới (hoặc tiếp tục từ ví dụ 2).
 2) Tạo `ContentFragment`, `FooterFragment`.
-3) `activity_main.xml`: có 2 vùng (container) chứa fragment.
+3) `activity_main.xml`: có 2 vùng (container) chứa FragmentContainerView.
 4) Tạo `FragmentOne`, `FragmentTwo`, `FragmentThree` và thiết kế UI mỗi fragment.
-5) Tạo 3 nút (One/Two/Three) và viết code để `replace()` fragment theo nút bấm.
+5) Tạo 3 nút (One/Two/Three) và viết code trong `FooterFragment.java` để `replace()` fragment theo nút bấm.
 
 **Gợi ý replace:**
-
+Có thể viết code trong `FooterFragment.java` như sau:
 ```java
-getSupportFragmentManager().beginTransaction()
-        .replace(R.id.containerContent, new FragmentTwo())
-        .commit();
+package hyhung.baith13thaydoifragment;
+
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+
+public class FooterFragment extends Fragment {
+    public FooterFragment() {}
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_footer, container, false);
+
+        Button one = view.findViewById(R.id.btnOne);
+        Button two = view.findViewById(R.id.btnTwo);
+        Button three = view.findViewById(R.id.btnThree);
+
+        FragmentManager fragmentManager = getParentFragmentManager();
+        one.setOnClickListener(v -> {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainerViewContent, new OneFragment())
+                    .commit();
+        });
+        two.setOnClickListener(v -> {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainerViewContent, new TwoFragment())
+                    .commit();
+        });
+        three.setOnClickListener(v -> {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainerViewContent, new ThreeFragment())
+                    .commit();
+        });
+
+        return view;
+    }
+}
 ```
 
 > Nếu muốn nhấn nút Back quay lại fragment trước đó, bạn có thể dùng `addToBackStack(null)` trước `commit()`.
+Ví dụ:
+```java
+one.setOnClickListener(v -> {
+    fragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainerViewContent, new OneFragment())
+            .addToBackStack(null) // Thêm giao dịch vào back stack
+            .commit();
+});
+```
+Chức năng: `addToBackStack(null)` sẽ đưa transaction hiện tại vào Back Stack của `FragmentManager`. Khi người dùng nhấn nút Back, transaction này sẽ được đảo ngược (reverse), tức là fragment mới sẽ bị loại bỏ và fragment trước đó sẽ được hiển thị lại.
 
 ---
 
