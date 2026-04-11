@@ -38,6 +38,99 @@
 3) Tạo `FooterFragment` và thiết kế UI trong res/layout/fragment_footer.xml.
 4) Sửa `activity_main.xml` trong res/layout/activity_main.xml để chứa 2 fragment (ưu tiên dùng `FragmentContainerView` hoặc `FrameLayout` để dễ thay đổi về sau).
 
+**Gợi ý layout ContentFragment (res/layout/fragment_content.xml):**
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContentFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55A839"
+        android:gravity="center"
+        android:text="@string/hello_fragments"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
+**Gợi ý layout FooterFragment (res/layout/fragment_footer.xml):**
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#009DD9"
+    android:paddingTop="20sp"
+    android:paddingBottom="20sp"
+    tools:context=".FooterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/one"
+            android:textSize="20sp"
+            app:cornerRadius="20dp"
+            app:strokeColor="#FFFFFF"
+            app:strokeWidth="5dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/two"
+            android:textSize="20sp"
+            app:cornerRadius="20dp"
+            app:strokeColor="#FFFFFF"
+            app:strokeWidth="5dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:text="@string/three"
+            android:textSize="20sp"
+            app:cornerRadius="20dp"
+            app:strokeColor="#FFFFFF"
+            app:strokeWidth="5dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
 **Gợi ý layout (dùng `FragmentContainerView`):**
 
 ```xml
@@ -78,7 +171,7 @@
 **Các bước (Ví dụ 2):**
 
 1) Tạo project mới.
-2) Tạo `ContentFragment` và `FooterFragment`.
+2) Tạo `ContentFragment` và `FooterFragment` trong res/layout.
 3) Tạo layout `activity_main.xml` có 2 placeholder (2 container) bằng `FrameLayout`.
 4) Trong `MainActivity.java`, dùng `FragmentManager` để add 2 fragment.
 
@@ -104,7 +197,7 @@
 ```
 
 **Gợi ý code add Fragment (MainActivity.java):**
-
+Thêm đoạn code sau vào `onCreate()`:
 ```java
 FragmentManager fragmentManager = getSupportFragmentManager();
 fragmentManager.beginTransaction()
@@ -112,6 +205,11 @@ fragmentManager.beginTransaction()
         .add(R.id.containerFooter, new FooterFragment())
         .commit();
 ```
+Trong đó:
+- `R.id.containerContent` và `R.id.containerFooter` là ID của các container trong layout.
+- `new ContentFragment()` và `new FooterFragment()` là instance của các Fragment bạn muốn thêm.
+- `commit()` để hoàn tất giao dịch.
+
 
 **Các thao tác thường dùng:** `add()`, `replace()`, `remove()`.
 
