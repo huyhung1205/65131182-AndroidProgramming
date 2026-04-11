@@ -30,6 +30,9 @@ mobile-java-native/
 ├── Lab04-Intent/                 # Lab 04 · Intent
 │   └── README.md                 # Tài liệu chi tiết Lab 04
 │
+├── Lab05-Fragments/              # Lab 05 · Fragments
+│   └── README.md                 # Tài liệu chi tiết Lab 05
+│
 ├── docs/                         # Tài liệu hỗ trợ
 └── notes/                        # Ghi chú lý thuyết
 ```
@@ -42,6 +45,7 @@ mobile-java-native/
 1. [Lab 02 · Event Handling](Lab02-Su-kien/README.md)
 1. [Lab 03 · ListView – RecyclerView](Lab03-ListView-RecyclerView/README.md)
 1. [Lab 04 · Intent](Lab04-Intent/README.md)
+1. [Lab 05 · Fragments](Lab05-Fragments/README.md)
 
 ---
 
@@ -59,3 +63,4 @@ mobile-java-native/
 - Lab 02: Các cách xử lý sự kiện
 - Lab 03: ListView và RecyclerView
 - Lab 04: Intent, truyền dữ liệu, explicit/implicit intent
+- Lab 05: Fragments, add/replace, fragments interaction
