@@ -14,6 +14,21 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
+### 18. **BaiTH13ThayDoiFragment**
+
+[Chi tiết](./BaiTH13ThayDoiFragment/app/src/main/java/hyhung/baith13thaydoifragment/MainActivity.java)
+![BaiTH13ThayDoiFragment - 1](imageProject/BaiTH13ThayDoiFragment/image.png)
+![BaiTH13ThayDoiFragment - 2](imageProject/BaiTH13ThayDoiFragment/image2.png)
+![BaiTH13ThayDoiFragment - 3](imageProject/BaiTH13ThayDoiFragment/image3.png)
+
+- **Mục Đích:** Minh họa thay đổi (replace) Fragment theo thao tác người dùng để cập nhật nội dung màn hình linh hoạt
+- **Khái Niệm Chính:** FragmentContainerView, FragmentManager (`getParentFragmentManager()`), FragmentTransaction, `replace()`, UI modularity
+- **Tính Năng:**
+  - Chia UI thành 2 vùng: Content (hiển thị nội dung) và Footer (3 nút One/Two/Three)
+  - Khi bấm nút ở Footer, thay thế fragment nội dung bằng `OneFragment` / `TwoFragment` / `ThreeFragment`
+  - Tổ chức theo mô hình “container → fragment” giúp dễ mở rộng/tái sử dụng
+- **Trọng Tâm Học Tập:** Nắm thao tác `replace()` fragment vào container và cách điều phối UI giữa các fragment trong cùng một activity
+
 ### 17. **BaiTH12FragmentDong**
 
 [Chi tiết](./BaiTH12FragmentDong/app/src/main/java/hyhung/baith12fragmentdong/MainActivity.java)
