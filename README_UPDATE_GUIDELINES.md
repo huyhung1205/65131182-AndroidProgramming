@@ -103,12 +103,43 @@ Sử dụng template này để thêm dự án mới:
 - Sử dụng emoticons thích hợp (📱, 🎯, 📋, v.v.)
 - Kiểm tra chính tả tiếng Việt
 - Cập nhật "Cập Nhật Lần Cuối" ở cuối README
+- Luôn kèm **text commit** sau khi cập nhật README (xem Quy Tắc 5)
 
 ❌ **Những điều không nên làm:**
 - Không dùng số thứ tự bị lặp hoặc bị nhảy
 - Để liên kết bị mất hoặc sai
 - Bỏ qua các trường bắt buộc
 - Sử dụng khoảng trắng không nhất quán
+
+---
+
+## ✅ Quy Tắc 5: Luôn đưa text commit sau khi cập nhật
+
+Sau mỗi lần bạn (hoặc Codex) cập nhật `README.md`, **phải trả về** một đoạn “text commit” để bạn copy dán nhanh khi commit Git.
+
+### 🧾 Template commit (khuyến nghị)
+
+Trường hợp chỉ cập nhật README (thêm/sửa mục dự án):
+```text
+docs: add README <TEN_DU_AN>
+
+- Add <TEN_DU_AN> to `README.md`
+```
+
+Trường hợp vừa cập nhật README vừa thêm ảnh minh hoạ:
+```text
+docs: update README <TEN_DU_AN>
+
+- Add <TEN_DU_AN> into `README.md`
+- Add picture `imageProject/<TEN_DU_AN>/image.png`
+```
+
+Trường hợp cập nhật nhiều dự án trong 1 lần:
+```text
+docs: update README (and add multiple projects)
+
+- Add <TEN_DU_AN_1>, <TEN_DU_AN_2> into `README.md`
+```
 
 ---
 
