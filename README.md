@@ -14,6 +14,19 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
+### 16. **BaiTH11FragmentTinh**
+
+[Chi tiết](./BaiTH11FragmentTinh/app/src/main/java/hyhung/baith11fragmenttinh/MainActivity.java)
+![BaiTH11FragmentTinh](imageProject/BaiTH11FragmentTinh/image.png)
+
+- **Mục Đích:** Minh họa cách thêm Fragment tĩnh (static) vào Activity để chia nhỏ UI thành các khối tựa như Content/Footer
+- **Khái Niệm Chính:** Fragment, static fragment (`<fragment>`), `onCreateView()`, LayoutInflater, UI modularity
+- **Tính Năng:**
+  - Hiển thị `ContentFragment` ở khu vực nội dung chính (TextView)
+  - Hiển thị `FooterFragment` ở phía dưới với 3 nút (One/Two/Three)
+  - Tạo bố cục 2 vùng và gắn fragment trực tiếp trong XML `activity_main.xml`
+- **Trọng Tâm Học Tập:** Nắm cách tạo Fragment, inflate layout trong Fragment và nhúng Fragment tĩnh vào Activity bằng XML
+
 ### 15. **BaiTH10_ViduIntentDonGian**
 
 [Chi tiết](./Intent_ViDu1/app/src/main/java/hyhung/intentvidu1/MainActivity.java)
