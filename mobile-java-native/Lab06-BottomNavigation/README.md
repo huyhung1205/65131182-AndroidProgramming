@@ -1,14 +1,14 @@
-# 📱 Bottom Navigation trong Android
+# Bottom Navigation trong Android
 
-## 📌 Giới thiệu
+## Giới thiệu
 
 Bottom Navigation là thanh điều hướng nằm ở phía dưới màn hình, cho phép người dùng chuyển nhanh giữa các màn hình chính (Fragment).
 
-👉 Phù hợp khi ứng dụng có từ **3–5 mục điều hướng chính**.
+Phù hợp khi ứng dụng có từ **3–5 mục điều hướng chính**.
 
 ---
 
-## 🧱 Công nghệ sử dụng
+## Công nghệ sử dụng
 
 - Java hoặc Kotlin
 - Android Studio
@@ -89,6 +89,7 @@ Mở `activity_main.xml`:
 ---
 
 ## Bước 4: Tạo các Fragment
+Tạo 3 Fragment: `HomeFragment`, `SearchFragment`, `ProfileFragment`.
 
 ### HomeFragment.java
 
@@ -127,44 +128,46 @@ public class ProfileFragment extends Fragment {
 Mở `MainActivity.java`:
 
 ```java
-BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+public class MainActivity extends AppCompatActivity {
 
-// Fragment mặc định
-loadFragment(new HomeFragment());
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
 
-bottomNavigationView.setOnItemSelectedListener(item -> {
-    Fragment fragment = null;
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-    switch (item.getItemId()) {
-        case R.id.nav_home:
-            fragment = new HomeFragment();
-            break;
-        case R.id.nav_search:
-            fragment = new SearchFragment();
-            break;
-        case R.id.nav_profile:
-            fragment = new ProfileFragment();
-            break;
+        if (savedInstanceState == null) {
+            loadFragment(new HomeFragment());
+        }
+
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            Fragment fragment = null;
+
+            int itemId = item.getItemId();
+            if (itemId == R.id.nav_home) {
+                fragment = new HomeFragment();
+            } else if (itemId == R.id.nav_search) {
+                fragment = new SearchFragment();
+            } else if (itemId == R.id.nav_profile) {
+                fragment = new ProfileFragment();
+            }
+
+            if (fragment != null) {
+                loadFragment(fragment);
+                return true;
+            }
+            return false;
+        });
     }
 
-    if (fragment != null) {
-        loadFragment(fragment);
-        return true;
+    private void loadFragment(Fragment fragment) {
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.frame_container, fragment)
+                .commit();
     }
-    return false;
-});
-```
-
----
-
-## Hàm load Fragment
-
-```java
-private void loadFragment(Fragment fragment) {
-    getSupportFragmentManager()
-        .beginTransaction()
-        .replace(R.id.frame_container, fragment)
-        .commit();
 }
 ```
 
@@ -172,7 +175,7 @@ private void loadFragment(Fragment fragment) {
 
 ## Tuỳ chỉnh (Optional)
 
-### 1. Ẩn label
+### 1. Ẩn label, chỉ hiển thị icon
 
 ```xml
 app:labelVisibilityMode="unlabeled"
@@ -190,31 +193,3 @@ app:itemTextColor="@color/color_selector"
 ```xml
 app:itemHorizontalTranslationEnabled="false"
 ```
-
----
-
-## Best Practices
-
-- Chỉ dùng tối đa **5 tab**
-- Mỗi tab nên có:
-  - Icon rõ ràng
-  - Tên ngắn gọn
-- Không nên reload Fragment quá nhiều → dùng cache nếu cần
-
----
-
-## 🔥 Gợi ý nâng cao
-
-- Dùng **Navigation Component (Jetpack)**
-- Kết hợp với **ViewPager2**
-- Thêm badge (notification count)
-
----
-
-## 📌 Tổng kết
-
-Bottom Navigation giúp:
-
-- Điều hướng nhanh
-- UI thân thiện
-- Chuẩn Material Design
