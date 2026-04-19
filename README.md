@@ -14,6 +14,19 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
+### 19. **BottomNavigation**
+
+[Chi tiết](./mobile-java-native/Lab06-BottomNavigation/app/src/main/java/hyhung/bottomnavigation/MainActivity.java)
+![BottomNavigation](imageProject/BottomNavigation/image.png) ![BottomNavigation](imageProject/BottomNavigation/image2.png) ![BottomNavigation](imageProject/BottomNavigation/image3.png)
+
+- **Mục Đích:** Minh họa cách sử dụng Bottom Navigation để điều hướng nhanh giữa các Fragment chính trong một ứng dụng Android
+- **Khái Niệm Chính:** BottomNavigationView, Fragment, FragmentManager, FragmentTransaction, vector drawable icon
+- **Tính Năng:**
+  - Hiển thị thanh điều hướng phía dưới với 3 mục Home, Search, Profile
+  - Chuyển Fragment theo từng mục được chọn trên Bottom Navigation
+  - Sử dụng menu XML và icon vector từ drawable
+- **Trọng Tâm Học Tập:** Nắm cách tổ chức điều hướng đa màn hình bằng Bottom Navigation và Fragment trong Android
+
 ### 18. **BaiTH13ThayDoiFragment**
 
 [Chi tiết](./BaiTH13ThayDoiFragment/app/src/main/java/hyhung/baith13thaydoifragment/MainActivity.java)
