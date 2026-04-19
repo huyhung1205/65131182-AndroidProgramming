@@ -17,6 +17,7 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 ### 19. **BottomNavigation**
 
 [Chi tiết](./mobile-java-native/Lab06-BottomNavigation/app/src/main/java/hyhung/bottomnavigation/MainActivity.java)
+
 <img src="./imageProject/BottomNavigation/image.png" width="200"> <img src="./imageProject/BottomNavigation/image2.png" width="200"> <img src="./imageProject/BottomNavigation/image3.png" width="200">
 
 - **Mục Đích:** Minh họa cách sử dụng Bottom Navigation để điều hướng nhanh giữa các Fragment chính trong một ứng dụng Android
