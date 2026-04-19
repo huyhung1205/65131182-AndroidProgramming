@@ -75,6 +75,7 @@ Lưu ý: Ưu tiên liên kết đến MainActivity.java nếu có, nếu không 
 #### Liên Kết Hình Ảnh:
 - **Định dạng**: `![TênDự Án](imageProject/[TênDựÁn]/image.png)`
 - **Lưu ý**: Tên folder hình ảnh phải khớp với tên dự án
+- **Khi có nhiều ảnh**: Ưu tiên chèn bằng thẻ HTML `<img>` trên cùng một dòng để hiển thị gọn và đồng đều hơn: <img src="./imageProject/<nameProject>/image.png" width="200">
 
 
 ## 🎨 Template Chuẩn
