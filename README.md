@@ -16,6 +16,9 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ### 20. **Thi Giữa Kỳ 2 - 65131182**
 
+COMMIT LẦN THỨ 2:
+![ThiGiuaKy2-1](./imageProject/KiemTraGK_65131182/image2.png)
+
 COMMIT LẦN THỨ 1:
 ![ThiGiuaKy2-1](./imageProject/KiemTraGK_65131182/image.png)
 

@@ -35,39 +35,35 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"
                 android:layout_weight="1"
-                android:text="Phan Huy Hùng"
+                android:text="Chức năng 2"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </FrameLayout>
-    <!-- Scrollable Content -->
-    <androidx.core.widget.NestedScrollView
+    <!-- Content with Title and ListView -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:fillViewport="true">
-        <LinearLayout
-            android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
-            <!-- Title -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Danh sách Thành phố"
-                android:textColor="@color/orange_900"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="16dp" />
-            <!-- ListView -->
-            <ListView
-                android:id="@+id/listview_cities"
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:divider="@color/orange_100"
-                android:dividerHeight="1dp" />
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+            android:text="Danh sách Thành phố"
+            android:textColor="@color/orange_900"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+        <!-- ListView -->
+        <ListView
+            android:id="@+id/listview_cities"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/orange_100"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
 </LinearLayout>
