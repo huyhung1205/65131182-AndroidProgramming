@@ -7,52 +7,227 @@
     android:background="@color/brand_background"
     android:orientation="vertical"
     tools:context=".Bai4Fragment">
-    <!-- Fixed Header -->
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="141dp"
-        android:background="@drawable/background_orin">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="bottom"
-            android:orientation="horizontal"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp">
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_gravity="center_vertical"
-                android:contentDescription="Avatar"
-                android:scaleType="centerCrop"
-                android:src="@drawable/avata"
-                app:shapeAppearanceOverlay="@style/CircleImageShapeAppearance"
-                app:strokeColor="@color/white"
-                app:strokeWidth="2dp" />
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="16dp"
-                android:layout_weight="1"
-                android:text="Phan Huy Hùng"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </FrameLayout>
     <!-- Scrollable Content -->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:fillViewport="true">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="20dp">
-            <!-- Content for Bai4 -->
+            <!-- Profile Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hồ sơ Sinh viên"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/orange_900"
+                android:gravity="center"
+                android:layout_marginBottom="20dp" />
+            <!-- Large Avatar Circle -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="Avatar"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avata"
+                app:shapeAppearanceOverlay="@style/CircleImageShapeAppearance"
+                app:strokeColor="@color/orange_600"
+                app:strokeWidth="3dp"
+                android:layout_marginBottom="16dp" />
+            <!-- Name -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phan Huy Hùng"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/orange_900"
+                android:gravity="center"
+                android:layout_marginBottom="4dp" />
+            <!-- Student ID -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MSSV: 65131182"
+                android:textSize="14sp"
+                android:textColor="@color/orange_700"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+            <!-- Hobbies Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/brand_surface"
+                app:cardElevation="2dp"
+                app:strokeColor="@color/orange_100"
+                app:strokeWidth="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sở Thích"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/orange_900"
+                        android:layout_marginBottom="12dp" />
+                    <!-- Hobby Item 1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⚽"
+                            android:textSize="16sp"
+                            android:layout_marginEnd="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bóng đá"
+                            android:textSize="14sp"
+                            android:textColor="@color/orange_700" />
+                    </LinearLayout>
+                    <!-- Hobby Item 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="📖"
+                            android:textSize="16sp"
+                            android:layout_marginEnd="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Đọc sách"
+                            android:textSize="14sp"
+                            android:textColor="@color/orange_700" />
+                    </LinearLayout>
+                    <!-- Hobby Item 3 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🎵"
+                            android:textSize="16sp"
+                            android:layout_marginEnd="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nghe nhạc"
+                            android:textSize="14sp"
+                            android:textColor="@color/orange_700" />
+                    </LinearLayout>
+                    <!-- Hobby Item 4 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="💻"
+                            android:textSize="16sp"
+                            android:layout_marginEnd="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lập trình"
+                            android:textSize="14sp"
+                            android:textColor="@color/orange_700" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <!-- Skills Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/brand_surface"
+                app:cardElevation="2dp"
+                app:strokeColor="@color/orange_100"
+                app:strokeWidth="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sở Trường"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/orange_900"
+                        android:layout_marginBottom="12dp" />
+                    <!-- Skills ChipGroup -->
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:singleLine="false">
+                        <com.google.android.material.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lập trình Kotlin"
+                            app:chipBackgroundColor="@color/orange_100"
+                            app:chipStrokeColor="@color/orange_600"
+                            app:chipStrokeWidth="1dp"
+                            android:checkable="false" />
+                        <com.google.android.material.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thuyết trình"
+                            app:chipBackgroundColor="@color/orange_100"
+                            app:chipStrokeColor="@color/orange_600"
+                            app:chipStrokeWidth="1dp"
+                            android:checkable="false" />
+                        <com.google.android.material.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Giao tiếp tiếng Anh"
+                            app:chipBackgroundColor="@color/orange_100"
+                            app:chipStrokeColor="@color/orange_600"
+                            app:chipStrokeWidth="1dp"
+                            android:checkable="false" />
+                        <com.google.android.material.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thiết kế UI/UX"
+                            app:chipBackgroundColor="@color/orange_100"
+                            app:chipStrokeColor="@color/orange_600"
+                            app:chipStrokeWidth="1dp"
+                            android:checkable="false" />
+                        <com.google.android.material.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Android Development"
+                            app:chipBackgroundColor="@color/orange_100"
+                            app:chipStrokeColor="@color/orange_600"
+                            app:chipStrokeWidth="1dp"
+                            android:checkable="false" />
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>

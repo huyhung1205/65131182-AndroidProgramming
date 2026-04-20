@@ -18,6 +18,6 @@
         android:title="Bai3" />
     <item
         android:id="@+id/nav_bai4"
-        android:icon="@drawable/ic_article"
+        android:icon="@drawable/ic_account"
         android:title="Bai4" />
 </menu>
