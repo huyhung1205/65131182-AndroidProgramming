@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.KiemTraGK_65131182" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/orange_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/orange_100</item>
+        <item name="colorOnPrimaryContainer">@color/orange_900</item>
+
+        <item name="colorSecondary">@color/orange_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/orange_50</item>
+        <item name="colorOnSecondaryContainer">@color/orange_900</item>
+
+        <item name="colorTertiary">@color/orange_400</item>
+        <item name="colorOnTertiary">@color/white</item>
+
+        <item name="android:colorBackground">@color/brand_background</item>
+        <item name="colorSurface">@color/brand_surface</item>
+        <item name="colorOnSurface">@color/brand_on_background</item>
+    </style>
+
+    <style name="Theme.KiemTraGK_65131182" parent="Base.Theme.KiemTraGK_65131182" />
+</resources>

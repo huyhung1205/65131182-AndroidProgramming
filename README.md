@@ -14,6 +14,11 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
+### 20. **Thi Giữa Kỳ 2 - 65131182**
+
+COMMIT LẦN THỨ 1:
+![ThiGiuaKy2-1](./imageProject/KiemTraGK_65131182/image.png)
+
 ### 19. **BottomNavigation**
 
 [Chi tiết](./mobile-java-native/Lab06-BottomNavigation/app/src/main/java/hyhung/bottomnavigation/MainActivity.java)

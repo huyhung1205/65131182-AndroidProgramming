@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brand_background"
+    android:orientation="vertical"
+    tools:context=".Bai3Fragment">
+    <!-- Fixed Header -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:background="@drawable/background_orin">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="Avatar"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avata"
+                app:shapeAppearanceOverlay="@style/CircleImageShapeAppearance"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="Phan Huy Hùng"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+    <!-- Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <!-- Content for Bai3 -->
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
