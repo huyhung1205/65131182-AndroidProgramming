@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "665079418045",
+    "firebase_url": "https://demoesp32-androidapp-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "demoesp32-androidapp",
+    "storage_bucket": "demoesp32-androidapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665079418045:android:f2508f32ece9e2e1137bd4",
+        "android_client_info": {
+          "package_name": "huhung.demoesp32_android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqI7Ro4hSLUWCzzcEzSlPj59mw_LgAGk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
