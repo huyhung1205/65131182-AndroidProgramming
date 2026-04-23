@@ -14,6 +14,21 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
+### 21. **DemoESP32Android**
+
+[Chi tiết](./DemoESP32Android/app/src/main/java/huhung/demoesp32_android/MainActivity.java)
+
+<img src="./imageProject/DemoESP32Android/image.png" width="200"> <img src="./imageProject/DemoESP32Android/image2.png" width="200"> <img src="./imageProject/DemoESP32Android/image3.png" width="200">
+
+- **Mục Đích:** Minh họa cách kết nối Android với ESP32 qua Firebase Realtime Database để nhận dữ liệu cảm biến
+- **Khái Niệm Chính:** Firebase Realtime Database, ValueEventListener, Sensor Data Integration, Real-time Monitoring
+- **Tính Năng:**
+  - Kết nối với Firebase Realtime Database
+  - Hiển thị dữ liệu nhiệt độ, độ ẩm, mức khói từ ESP32
+  - Cập nhật trạng thái online/offline của thiết bị
+  - Theo dõi mốc thời gian nhận dữ liệu
+- **Trọng Tâm Học Tập:** Làm việc với Firebase Realtime Database, xử lý dữ liệu thời gian thực từ thiết bị IoT
+
 ### 20. **Thi Giữa Kỳ 2 - 65131182**
 
 KẾT QUẢ:
