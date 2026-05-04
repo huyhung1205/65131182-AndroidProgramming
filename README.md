@@ -18,7 +18,9 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 [Chi tiết](./DemoESP32Android/app/src/main/java/huhung/demoesp32_android/MainActivity.java)
 
-<img src="./imageProject/DemoESP32Android/image.png" width="200"> <img src="./imageProject/DemoESP32Android/image2.png" width="200"> <img src="./imageProject/DemoESP32Android/image3.png" width="200">
+<img src="./imageProject/DemoESP32Android/image.png" width="200"> 
+<img src="./imageProject/DemoESP32Android/image2.png" width="200"> 
+<img src="./imageProject/DemoESP32Android/image3.png" width="200">
 
 - **Mục Đích:** Minh họa cách kết nối Android với ESP32 qua Firebase Realtime Database để nhận dữ liệu cảm biến
 - **Khái Niệm Chính:** Firebase Realtime Database, ValueEventListener, Sensor Data Integration, Real-time Monitoring
