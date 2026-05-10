@@ -14,6 +14,22 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
+### 22. **NoteApp**
+
+[Chi tiết](./NoteApp/app/src/main/java/hyhung/noteapp/MainActivity.java)
+<img src="./imageProject/NoteApp/image.png" width="200"><img src="./imageProject/NoteApp/image1.png" width="200">
+![NoteApp](imageProject/NoteApp/imagemain.png)
+
+- **Mục Đích:** Minh họa ứng dụng quản lý ghi chú (Notes) đồng bộ thời gian thực với Firebase Realtime Database
+- **Khái Niệm Chính:** Firebase Realtime Database, ValueEventListener, RecyclerView, Intent điều hướng màn hình, Adapter pattern
+- **Tính Năng:**
+  - Đồng bộ danh sách ghi chú theo thời gian thực từ Firebase
+  - Hiển thị danh sách ghi chú bằng RecyclerView
+  - Thêm ghi chú mới thông qua AddNoteActivity
+  - Chọn ghi chú để sửa (truyền đối tượng Note qua Intent extras)
+  - Xóa ghi chú trực tiếp trên Firebase
+- **Trọng Tâm Học Tập:** Làm việc với Firebase realtime data, tổ chức CRUD cơ bản với RecyclerView và luồng Intent giữa các Activity
+
 ### 21. **DemoESP32Android**
 
 [Chi tiết](./DemoESP32Android/app/src/main/java/huhung/demoesp32_android/MainActivity.java)
