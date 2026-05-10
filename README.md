@@ -14,6 +14,24 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 
 ## 📱 Tổng Quan Các Dự Án
 
+### 23. **BonusFirebaseAuthApp**
+
+[Chi tiết](./BonusFirebaseAuthApp/app/src/main/java/hyhung/bonusfirebaseauthapp/MainActivity.java)
+
+<img src="./imageProject/BonusFirebaseAuthApp/image.png" width="200"><img src="./imageProject/BonusFirebaseAuthApp/image2.png" width="200"><img src="./imageProject/BonusFirebaseAuthApp/image3.png" width="200">
+
+![BonusFirebaseAuthApp](imageProject/BonusFirebaseAuthApp/imagemain.png)
+
+- **Mục Đích:** Minh họa chức năng đăng ký/đăng nhập bằng Firebase Authentication và trang chủ hiển thị email người dùng
+- **Khái Niệm Chính:** FirebaseAuth, FirebaseUser, Authentication flow, Intent chuyển màn hình, xử lý trạng thái đăng nhập
+- **Tính Năng:**
+  - Đăng ký tài khoản (RegisterActivity)
+  - Đăng nhập tài khoản (LoginActivity)
+  - Tự động điều hướng về MainActivity khi đăng nhập thành công
+  - Hiển thị email người dùng hiện tại lên giao diện
+  - Đăng xuất (logout) và quay lại màn hình đăng nhập
+- **Trọng Tâm Học Tập:** Luồng Firebase Authentication (register/login), quản lý session người dùng và cập nhật UI theo trạng thái đăng nhập
+
 ### 22. **NoteApp**
 
 [Chi tiết](./NoteApp/app/src/main/java/hyhung/noteapp/MainActivity.java)
@@ -323,5 +341,5 @@ COMMIT LẦN THỨ 1:
 
 ---
 
-**Cập Nhật Lần Cuối:** Tháng 4 năm 2026
+**Cập Nhật Lần Cuối:** Tháng 5 năm 2026
 **Chủ Sở Hữu Kho Lưu Trữ:** Phan Huy Hùng - 65131182
