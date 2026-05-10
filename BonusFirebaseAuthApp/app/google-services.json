@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "254886886607",
+    "project_id": "bonus-firebaseauthapp",
+    "storage_bucket": "bonus-firebaseauthapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254886886607:android:b8308cd82940644ba3cbba",
+        "android_client_info": {
+          "package_name": "hyhung.bonusfirebaseauthapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254886886607-0dg0ietkvp8nnv9apgf7o9hm6b3c1dl1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8hr29SDEa5rDh7okIOtKgINKoVVTPoXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254886886607-0dg0ietkvp8nnv9apgf7o9hm6b3c1dl1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
