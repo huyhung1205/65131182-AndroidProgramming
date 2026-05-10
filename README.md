@@ -35,6 +35,7 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 ### 22. **NoteApp**
 
 [Chi tiết](./NoteApp/app/src/main/java/hyhung/noteapp/MainActivity.java)
+
 <img src="./imageProject/NoteApp/image.png" width="200"><img src="./imageProject/NoteApp/image1.png" width="200">
 ![NoteApp](imageProject/NoteApp/imagemain.png)
 
@@ -68,6 +69,7 @@ Kho lưu trữ này chứa toàn bộ code, tài liệu và bài lab của môn 
 ### 20. **Thi Giữa Kỳ 2 - 65131182**
 
 KẾT QUẢ:
+
 ![ThiGiuaKy2-1](./imageProject/KiemTraGK_65131182/cn1.png)![ThiGiuaKy2-1](./imageProject/KiemTraGK_65131182/cn2.png)![ThiGiuaKy2-1](./imageProject/KiemTraGK_65131182/cn3.png)![ThiGiuaKy2-1](./imageProject/KiemTraGK_65131182/cn4.png)![ThiGiuaKy2-1](./imageProject/KiemTraGK_65131182/cn5.png)
 
 COMMIT LẦN THỨ 6:
@@ -342,4 +344,5 @@ COMMIT LẦN THỨ 1:
 ---
 
 **Cập Nhật Lần Cuối:** Tháng 5 năm 2026
+
 **Chủ Sở Hữu Kho Lưu Trữ:** Phan Huy Hùng - 65131182
